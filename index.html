@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TitaniumMC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="image.png" class="hero-bg-img" alt="" />
+      <div class="hero-bg-overlay"></div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="nav-logo-text">TITANIUMMC</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-tab active" data-tab="status">Sunucu</a></li>
+        <li><a href="#" class="nav-tab" data-tab="games">Oyunlar</a></li>
+        <li><a href="#" class="nav-tab" data-tab="updates">Güncellemeler</a></li>
+        <li><a href="#" class="nav-tab" data-tab="join">Katıl</a></li>
+      </ul>
+      <div class="lunx-pill">
+        <span class="lunx-dot"></span> LUNX Altyapısı
+      </div>
+    </nav>
+
+    <div class="hero-center">
+      <div class="hero-top-tag">
+        <span class="htag-dot"></span>
+        LUNX Altyapısı ile Güçlendirilmiştir
+      </div>
+      <h1 class="hero-title">TITANIUMMC</h1>
+      <p class="hero-sub">Türkiye'nin En Eğlenceli Minecraft Sunucusu</p>
+
+      <div class="ip-row">
+        <div class="ip-box">
+          <span class="ip-lbl">IP</span>
+          <span class="ip-val">titaniummc.redstone.tr</span>
+          <button class="ip-copy" onclick="copyIP()">Kopyala</button>
+        </div>
+      </div>
+
+      <div class="hero-tags">
+        <span class="htag">Java Edition</span>
+        <span class="htag">Sürüm 1.21.10</span>
+        <span class="htag htag-lunx">🔮 LUNX</span>
+      </div>
+
+      <div class="scroll-hint" onclick="scrollToContent()">
+        <span>Keşfet</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTENT ===== -->
+  <main class="main" id="main">
+
+    <!-- TAB BAR -->
+    <div class="tab-bar-wrap">
+      <div class="tab-bar">
+        <button class="tab-btn active" data-tab="status">📡 Sunucu Durumu</button>
+        <button class="tab-btn" data-tab="games">🎮 Oyun Modları</button>
+        <button class="tab-btn" data-tab="updates">📋 Güncellemeler</button>
+        <button class="tab-btn" data-tab="join">🚀 Nasıl Katılırım?</button>
+        <div class="tab-ink" id="tabInk"></div>
+      </div>
+    </div>
+
+    <!-- PANELS -->
+    <div class="panels-wrap">
+
+      <!-- STATUS -->
+      <div class="panel active" id="tab-status">
+        <div class="status-layout">
+          <div class="status-orb-zone">
+            <div class="sorb" id="statusOrb">
+              <div class="sorb-ring sr1"></div>
+              <div class="sorb-ring sr2"></div>
+              <div class="sorb-ring sr3"></div>
+              <div class="sorb-core" id="sorbCore"></div>
+            </div>
+          </div>
+          <div class="status-details">
+            <div class="status-main-text" id="statusText">Kontrol ediliyor...</div>
+            <div class="status-ip-line">titaniummc.redstone.tr</div>
+            <div class="status-players" id="playerCount"></div>
+            <div class="sinfo-grid">
+              <div class="sinfo-card">
+                <div class="sinfo-icon">☕</div>
+                <div class="sinfo-lbl">Edition</div>
+                <div class="sinfo-val">Java</div>
+              </div>
+              <div class="sinfo-card">
+                <div class="sinfo-icon">⚡</div>
+                <div class="sinfo-lbl">Sürüm</div>
+                <div class="sinfo-val">1.21.10</div>
+              </div>
+              <div class="sinfo-card">
+                <div class="sinfo-icon">🔮</div>
+                <div class="sinfo-lbl">Altyapı</div>
+                <div class="sinfo-val sinfo-lunx">LUNX</div>
+              </div>
+              <div class="sinfo-card">
+                <div class="sinfo-icon">🌐</div>
+                <div class="sinfo-lbl">IP</div>
+                <div class="sinfo-val sinfo-ip">titaniummc.redstone.tr</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GAMES -->
+      <div class="panel" id="tab-games">
+        <div class="games-grid" id="gamesGrid"></div>
+      </div>
+
+      <!-- UPDATES -->
+      <div class="panel" id="tab-updates">
+        <div class="updates-wrap" id="updatesWrap"></div>
+      </div>
+
+      <!-- JOIN -->
+      <div class="panel" id="tab-join">
+        <div class="join-grid">
+          <div class="jcard" style="--ji:0">
+            <div class="jstep">1</div>
+            <h3>Java Edition İndir</h3>
+            <p>Minecraft Java Edition'ı resmi sitesinden satın alıp indir. Windows, macOS ve Linux desteklenir.</p>
+          </div>
+          <div class="jcard" style="--ji:1">
+            <div class="jstep">2</div>
+            <h3>Çok Oyunculu'ya Gir</h3>
+            <p>Minecraft'ı aç → Çok Oyunculu → Sunucu Ekle seçeneğine tıkla.</p>
+          </div>
+          <div class="jcard" style="--ji:2">
+            <div class="jstep">3</div>
+            <h3>IP Adresini Gir</h3>
+            <p>Sunucu Adı: <strong>TitaniumMC</strong><br/>Sunucu Adresi: <strong>titaniummc.redstone.tr</strong></p>
+          </div>
+          <div class="jcard jcard-launcher" style="--ji:3">
+            <div class="jstep jstep-l">L</div>
+            <h3>Launcher <span class="soon-tag">Yakında</span></h3>
+            <p>TitaniumMC özel launcher'ı hazırlanıyor. Tek tıkla bağlan, LUNX altyapısı ile ultra hızlı deneyim.</p>
+          </div>
+        </div>
+
+        <div class="lunx-banner">
+          <img src="tumblr_4624e49051ad5cb18a0cdb7c749578df_e5ac2b6c_640.gif" class="lunx-banner-gif" alt="" />
+          <div class="lunx-banner-overlay"></div>
+          <div class="lunx-banner-text">
+            <div class="lunx-banner-icon">🔮</div>
+            <h3>LUNX Altyapısı</h3>
+            <p>TitaniumMC, LUNX'ün güçlü ve düşük gecikmeli altyapısı üzerinde çalışmaktadır. Kesintisiz ve hızlı oyun deneyimi garantisi.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">TITANIUMMC</div>
+    <div class="footer-powered">🔮 <span>LUNX</span> Altyapısı ile güçlendirilmiştir</div>
+    <div class="footer-ip"><code>titaniummc.redstone.tr</code> · Java Edition · 1.21.10</div>
+    <div class="footer-copy">&copy; 2025 TitaniumMC</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
