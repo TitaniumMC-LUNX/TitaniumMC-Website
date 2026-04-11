@@ -7,12 +7,19 @@ const GAMES_DATA = [
   }
 ];
 
-const UPDATES_DATA = [
+const UPDATES_DATA = [  
+  {
+    "version": "[2]",
+    "date": "11 Nis 2026",
+    "title": "Websitemiz GÜNCELLENDI!!!!!",
+    "desc": "artık daha şık...",
+    "tags": ["new"]
+  }
   {
     "version": "[1]",
     "date": "03 Nis 2026",
     "title": "Websitemiz açıldı!!!",
     "desc": "LUNX - eymen sayesinde [:)]",
-    "tags": ["new"]
+    "tags": ["old"]
   }
 ];
