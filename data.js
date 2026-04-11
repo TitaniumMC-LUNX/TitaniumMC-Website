@@ -14,7 +14,7 @@ const UPDATES_DATA = [
     "title": "Websitemiz GÜNCELLENDI!!!!!",
     "desc": "artık daha şık...",
     "tags": ["new"]
-  }
+  };
   {
     "version": "[1]",
     "date": "03 Nis 2026",
