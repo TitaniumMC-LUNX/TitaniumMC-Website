@@ -1,8 +1,50 @@
 const GAMES_DATA = [
   {
-    icon: "🩹",
-    name: "Liste yakında",
-    desc: "yani birazdan eklenicek sistemler kuruluyor",
+    icon: "🛏️",
+    name: "BedWars",
+    desc: "yakında",
+    status: "coming"
+  },
+  {
+    icon: "🌌",
+    name: "SkyBlock",
+    desc: "yakında",
+    status: "coming"
+  },
+  {
+    icon: "🎮",
+    name: "Minigames",
+    desc: "aktif",
+    status: "active"
+  },
+  {
+    icon: "🌍",
+    name: "TitaniumMC SMP",
+    desc: "kapalı",
+    status: "offline"
+  },
+  {
+    icon: "🏃",
+    name: "Parkour",
+    desc: "kapalı",
+    status: "offline"
+  },
+  {
+    icon: "⚔️",
+    name: "PVP",
+    desc: "aktif",
+    status: "active"
+  },
+  {
+    icon: "🎨",
+    name: "CreativeWorld",
+    desc: "aktif",
+    status: "active"
+  },
+  {
+    icon: "📦",
+    name: "BoxPVP",
+    desc: "aktif",
     status: "active"
   }
 ];
