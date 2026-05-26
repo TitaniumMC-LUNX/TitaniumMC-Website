@@ -1,4 +1,4 @@
-const SERVER_IP = "titaniummc.redstone.tr";
+const SERVER_IP = "prtitaniummc.su.redstone.tr";
 const DATA_URLS = [
   "https://raw.githubusercontent.com/TitaniumMC-LUNX/TitaniumMC-Website/refs/heads/main/data.js",
   "https://raw.githubusercontent.com/TitaniumMC-LUNX/TitaniumMC-Website/main/data.js"
